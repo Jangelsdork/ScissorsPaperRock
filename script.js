@@ -44,6 +44,7 @@ function playRound() {
     let computerSelect =  itemSelector();
     if (playerSelect === computerSelect) {
         console.log("its a tie!")
+            playRound();
     }
     else if (playerSelect===0 && computerSelect===1){
         result = "human"
